@@ -1,0 +1,22 @@
+Start testing: Jun 26 15:49 CEST
+----------------------------------------------------------
+1/1 Testing: tests
+1/1 Test: tests
+Command: "/Users/Vanessa/Documents/Simon/C++/raytracer/build/build/Release/tests"
+Directory: /Users/Vanessa/Documents/Simon/C++/raytracer/build
+"tests" start time: Jun 26 15:49 CEST
+Output:
+----------------------------------------------------------
+SphereSpherename3
+===============================================================================
+All tests passed (10 assertions in 6 test cases)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"tests" end time: Jun 26 15:49 CEST
+"tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 26 15:49 CEST
