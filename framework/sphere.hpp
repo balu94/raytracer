@@ -17,6 +17,7 @@ public:
 /*	std::string const& name() const override;
 	Color const& color() const override;
 */	std::ostream& print(std::ostream& os) const override;
+	bool Sphere::intersect(Ray const& r) const;
 private:
 	glm::vec3 center_;
 	double radius_;

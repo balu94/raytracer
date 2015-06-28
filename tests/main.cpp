@@ -1,3 +1,5 @@
+//cd ./Documents/Simon/C++/raytracer/raytracer/build/build/Release/
+
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
 #include "box.hpp"
@@ -46,6 +48,25 @@ TEST_CASE("aufgabe5", "[5_Sphere area_volume]")
   Sphere s{{0.0, 1.0, 2.0}, {3.0}};
   std::cout << s << std::endl;
 }
+
+TEST_CASE("aufgabe6_intersectRaySphere", "[intersect]")
+{
+  //Ray
+  glm::vec3 ray_origin(0.0, 0.0, 0.0);
+  // ray direction has to be normalized!
+  // you can use:
+  // v= glm::normalize(some_vector)
+  glm::vec3 ray_direction(0.0, 0.0, 1.0);
+
+  //Sphere
+  glm::vec3 sphere_center(0.0, 0.0, 5.0);
+  float sphere_radius(1.0);
+
+  float distance(0.0);
+  auto result = glm::intersectRaySphere(ray_origin, ray_direction, sphere_center, sphere_radius, distance);
+  REQUIRE(distance == Approx(4.0f));
+}
+
 
 int main(int argc, char *argv[])
 {
